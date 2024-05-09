@@ -25,7 +25,7 @@ class Automata {
     }
 
     getCellSizeFromInput() {
-        return parseInt(document.getElementById("cellSize").value, 10);
+        return parseInt(document.getElementById("zoom").value, 10);
     }
 
     initializeEventListeners() {
@@ -33,7 +33,7 @@ class Automata {
             this.speed = this.getSpeedFromInput();
         });
 
-        document.getElementById("cellSize").addEventListener("change", () => {
+        document.getElementById("zoom").addEventListener("change", () => {
             this.cellSize = this.getCellSizeFromInput();
         });
     }
